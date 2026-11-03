@@ -1,0 +1,4 @@
+privado/
+node_modules/
+*.bak*
+__pycache__/

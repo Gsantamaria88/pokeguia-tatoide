@@ -1,0 +1,16 @@
+{
+ "medallas": 5,
+ "dinero": 70681,
+ "hechos": {},
+ "timers": {},
+ "evento": {"gat": 0, "fla": 20, "inc": 0},
+ "actualizado": "2026-11-03T12:00:00Z",
+ "equipo": [
+  {"sp":"Serperior","nv":36,"nat":"dócil","mov":[["Corte","normal",50],["Ciclón Hojas","planta",65],["Portazo","normal",80],["Hoja Aguda","planta",90]]},
+  {"sp":"Simipour","nv":38,"nat":"seria","mov":[["Escaldar","agua",80],["Hidrobomba","agua",120],["Triturar","siniestro",80],["Golpe Cabeza","normal",70]]},
+  {"sp":"Graveler","nv":35,"nat":"alegre (+Vel −At.Esp)","mov":[["Autodestruc","normal",0],["Avalancha","roca",75],["Terremoto","tierra",100],["Pedrada","roca",75]]},
+  {"sp":"Dratini","nv":35,"nat":"miedosa (+Vel −Ataque)","mov":[["Agilidad","psiquico",0],["Portazo","normal",80],["Carga Dragón","dragon",100],["Acua Cola","agua",90]]},
+  {"sp":"Bagon","nv":35,"nat":"activa (+Vel −Def)","mov":[["Cara Susto","normal",0],["Triturar","siniestro",80],["Garra Dragón","dragon",80],["Cabezazo Zen","psiquico",80]]},
+  {"sp":"Golett","nv":35,"nat":"seria","mov":[["Terratemblor","tierra",60],["Def. Férrea","acero",0],["Magnitud","tierra",70],["Megapuño","normal",80]]}
+ ]
+}

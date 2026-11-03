@@ -1,0 +1,150 @@
+{
+ "nota": "Paso = [id, título, detalle, prueba, opcional]. prueba: p = wiki de PokeMMO, b = juego original o guía antigua sin confirmar, t = captura o registro de la partida.",
+ "fases": [
+  {"id":"f1","med":1,"nom":"Medalla 1 · Inicio hasta Gres","lim":"Límite 20 → 24","lugares":[
+   {"es":"Pueblo Arcilla","en":"Nuvema Town","pasos":[
+     ["a1","Elige a Snivy","La caja de iniciales está en tu habitación. Después llega el combate de práctica con Bel y Cheren.","b"],
+     ["a2","Ve al laboratorio de la Prof. Encina","Sal de casa hacia el laboratorio. Recibes la Pokédex y sigues hacia la Ruta 1.","b"]]},
+   {"es":"Ruta 1","en":"Route 1","pasos":[
+     ["a3","Aprende a capturar y coge a Lillipup","Encina te enseña a capturar. Lillipup evoluciona a Herdier y Stoutland y era el Normal de la guía antigua.","b"]]},
+   {"es":"Pueblo Terracota","en":"Accumula Town","pasos":[
+     ["a4","Mitin del Equipo Plasma y primer combate con N","Ghetsis da su discurso en la plaza. N te reta con un Purrloin Nv.5.","p"]],
+    "objetos":["Poké Ball: regalo de un hombre, piso superior del edificio junto a la puerta"]},
+   {"es":"Ruta 2","en":"Route 2","pasos":[
+     ["a5","Recoge las Deportivas y combate con Bel","Las Deportivas te permiten correr. Combate con todos los entrenadores para llegar sobrado a Gres.","b"]]},
+   {"es":"Ciudad Gres","en":"Striaton City","pasos":[
+     ["a6","Combate con Cheren en la Escuela de Entrenadores","Va hasta Nv.10. Al ganar te da 3 Bayas Aranja.","p"],
+     ["a7","Coge el mono gratis antes del gimnasio","Una mujer a las puertas del Solar de los Sueños te da uno Nv.10, una sola vez. Con Snivy te conviene Panpour, el de Agua.","p"],
+     ["a8","Vence a Zeo","Antes hay dos camareros: Lillipup Nv.11 y dos Purrloin Nv.10. Zeo lleva Lillipup Nv.10 y Pansear Nv.12. El líder depende de tu inicial. Premio: Medalla Trío y MT Avivar.","p"],
+     ["a9","Recoge el MO Corte","Te lo da Fennel después del gimnasio.","p"]],
+    "objetos":["Súper Ball: hombre, edificio del sureste","Poké Ball: jardín del suroeste","Ocaso Ball: Camorrista, callejón del este","Cura Total: niño de la escuela, si aciertas el test","Velocidad X: detrás de las casas del sur","Agua Fresca: chico de gafas a la entrada del gimnasio","Con Surf: Zinc (oculto, junto a la salida a Ruta 3) y Perla Grande (pescador junto a esa salida)"],
+    "salvajes":"Solo agua: Basculin, Psyduck, Corphish; con caña, Goldeen y Seaking."}]},
+  {"id":"f2","med":2,"nom":"Medalla 2 · Hasta Esmalte","lim":"Límite 24 → 27","lugares":[
+   {"es":"Solar de los Sueños","en":"Dreamyard","pasos":[
+     ["b1","Salva a Munna del Equipo Plasma","Vence a los soldados. Fennel te da el C-Gear y Amanita el Pal Pad.","p"]],
+    "objetos":["Zona norte: Defensa X, Poción, Poké Ball (con Corte), Repelente (con Corte), Antiparalizador (con Corte)","Zona sur y sótano, sin confirmar: Revivir, Súper Poción, 2 Despertar (ocultos), Cuchara Torcida y MT Comesueños","Sótano cerrado hasta derrotar a Ghetsis: allí está Gorm con MT Danza Espada"],
+    "salvajes":"Munna, Purrloin, Patrat, Audino, Jigglypuff y Zubat, Nv.8-12. Musharna los viernes en el sótano."},
+   {"es":"Ruta 3","en":"Route 3","pasos":[
+     ["b2","Pasa por la Guardería y la escuela","La enfermera de la escuela cura gratis, así que aprovecha para entrenar con los alumnos.","b"]]},
+   {"es":"Cueva Manantial","en":"Wellspring Cave","pasos":[
+     ["b3","Vence a 3 soldados del Plasma junto a Cheren","Nv.12. Quitan un Pokémon a una niña y no lo recupera en este momento.","p"],
+     ["b4","Vuelve con Surf a por lo que falta","MT Puntapié, MT Onda Certera y Agua Mística están al fondo.","p",1]],
+    "objetos":["1F: MT Detección, Cura Total (oculta), Éter y Cuerda Huida (con Surf)","B1F: Hiperpoción, Súper Poción y Revivir (ocultos), Buceo Ball, Agua Mística, MT Puntapié, MT Onda Certera"],
+    "salvajes":"Roggenrola y Woobat Nv.10-13; Drilbur en el polvo; Boldore en B1F."},
+   {"es":"Ciudad Esmalte","en":"Nacrene City","pasos":[
+     ["b5","Vence a Aloe en el Museo","Puzle de libreros. Herdier Nv.18 y Watchog Nv.20 en el juego original. Premio: Medalla Básica y MT Represalia.","b"],
+     ["b6","Recoge la Zahorí","Te la da Bel tras la medalla y marca objetos ocultos.","p"],
+     ["b7","Gana a N a la salida","Lleva Zorua Nv.15 según la wiki.","p"]],
+    "objetos":["Baya Atania: Cheren al entrar","Semilla Milagro: niña de la casa más al oeste, si contestas Snivy","Revivir (oculto): cruzando la vía, a la derecha de la valla","Ultra Ball (oculta): cerca del Café, a la derecha del acordeonista","Refresco: camarera del Café, los miércoles"]}]},
+  {"id":"f3","med":3,"nom":"Medalla 3 · Hasta Porcelana","lim":"Límite 27 → 31","lugares":[
+   {"es":"Bosque Azulejo","en":"Pinwheel Forest","pasos":[
+     ["c1","Recupera el Hueso de Dragón","Cruza el bosque por dentro venciendo a los soldados. El último te lo entrega y Aloe te da una Piedra Lunar.","p"],
+     ["c2","Coge el MO Golpe Roca","Te lo da una mujer cerca de la entrada de Esmalte.","p"]],
+    "objetos":["Exterior: 2 Súper Pociones, 2 Éter, Súper Ball, Poción, Antídoto y Seta Pequeña (ocultos), Red Ball","Roca Reto: rómpela con un Pokémon de Lucha y da Piedra Dura","Interior: Raíz Grande, MT Hierba Lazo, MT Pin Misil, Polvo Plateado, Semilla Milagro, Súper Poción, Caramelo Raro (oculto, al este del puente)","Baya Meloc: guardabosques Irene y Miguel"],
+    "salvajes":"Monos, Cottonee, Petilil, Pidove, Sewaddle, Venipede y Slakoth, Nv.15-17. Timburr en el exterior según la guía antigua. Enfermera Shery cura en la zona exterior."},
+   {"es":"Ciudad Porcelana","en":"Castelia City","pasos":[
+     ["c3","Recupera al Munna de Bel","Sigue al Plasma hasta su guarida junto a la calle del gimnasio. Antes, Camus no acepta el reto.","p"],
+     ["c4","Vence a Camus","Colmena con botones y paredes de miel. 5 Arlequines Nv.20-21. Camus: Dwebble y Swadloon Nv.21, Whirlipede Nv.22, Leavanny Nv.23. Premio: Medalla Élitro y MT Estoicismo.","p"],
+     ["c5","Consigue el Repartir Exp.","Vence a los empleados de la planta 55 y al Presidente Geoff.","p",1],
+     ["c6","Consigue la Moneda Amuleto","Vence a los bailarines Mickey, Edmond y Raymond. Cuesta poco y da +50 % de dinero.","p",1],
+     ["c7","Coge el Mineral Evolutivo","Científico, 1F del edificio del noreste. Pide 25 Pokémon vistos.","p",1],
+     ["c8","Elige Piedra Hoja, Fuego o Agua","Científico del muelle Pulgar. Solo una.","p",1]],
+    "objetos":["Destello: hombre tras el contenedor de Calle Estrecha","Planta 47: Veloz Ball, Turno Ball, Periscopio y Revivir","Planta 55: Súper Poción","MT Descanso: excursionista, planta 11 del edificio oeste","MT Atracción: niña, planta 47 del edificio sureste","Baya Yache y Bola Humo: Iris, tras rescatar a Munna","Una baya al día del Arlequín de Studio Castelia","Master Ball y otros: Hombre de Negro en el Centro, según intercambios con otras ID"],
+    "salvajes":"Sin salvajes. Morimoto, el rival de Nv.77, aparece tras la Liga."}]},
+  {"id":"f4","med":4,"nom":"Medalla 4 · Hasta Mayólica","lim":"Límite 31 → 35","lugares":[
+   {"es":"Ruta 4","en":"Route 4","pasos":[
+     ["d1","Cruza el desierto hacia el norte","Hay tormenta de arena y mucho entrenador.","b"]]},
+   {"es":"Resort Desierto","en":"Desert Resort","pasos":[
+     ["d2","Capturas de esta zona","Sandile (el Krookodile de la guía antigua), Darumaka, Maractus, Scraggy y Sigilyph. Es opcional si tu equipo ya funciona.","p",1]],
+    "objetos":["Gafas de Sol, Arena Fina (Hombre de Negro), Agua Fresca, Súper Poción, Escama Corazón, Piedra Fuego","Ocultos: Hiperpoción, Éter, Polvo Estelar, MT Bucle Arena"],
+    "salvajes":"Darumaka, Sandile, Maractus, Trapinch, Scraggy, Dwebble y Sandshrew, Nv.19-23. Horda de Darumaka Nv.17-18."},
+   {"es":"Castillo Ancestral","en":"Relic Castle","pasos":[
+     ["d3","Elige fósil","Un Mochilero del 1F te deja elegir Fósil Coraza o Fósil Pluma.","p",1]],
+    "objetos":["B1F: Revivir, Elixir (oculto)","B2F: Hiperpoción, MT Giro Fuego","B3F: Revivir","B4F: Súper Poción (oculta), Piedra Solar"],
+    "salvajes":"Sandile, Sandshrew y Yamask, Nv.21-24."},
+   {"es":"Ciudad Mayólica","en":"Nimbasa City","pasos":[
+     ["d4","Salva al de la Guardería y coge la Bici","Dos soldados del Plasma lo acosan a la entrada.","p"],
+     ["d5","Recoge el MO Fuerza","Entrenador Guay al noroeste del Centro Pokémon.","p"],
+     ["d6","Gana a N en la noria","Te revela que dirige el Equipo Plasma. Lleva Zorua Nv.26 según la wiki.","p"],
+     ["d7","Vence a Camila","Montañas rusas con interruptores. Camila: 2 Emolga Nv.24, Joltik Nv.25, Zebstrika Nv.27. Emolga es Volador: Tierra no le toca. Premio: Medalla Voltio y MT Voltiocambio.","p"],
+     ["d8","Entrenadores diarios del estadio","El Estadio Grande y la Cancha Pequeña dan combates cada día.","p",1]],
+    "objetos":["Cascabel Alivio: Dama, si tu Pokémon te tiene mucho cariño","Ataque X, Súper Repelente (oculto), Piedra Solar","Brazal Firme: hombre de la puerta este","MT Eco Voz: dama del teatro","Vs. Grabadora: al salir del Metro"],
+    "salvajes":"Sin salvajes. Con 4 medallas el puerto ya te deja viajar a otras regiones, según la guía antigua."}]},
+  {"id":"f5","med":5,"nom":"Medalla 5 · Hasta Fayenza","lim":"Límite 35 → 38","lugares":[
+   {"es":"Ruta 5 y Puente Levadizo","en":"Route 5 · Driftveil Drawbridge","pasos":[
+     ["e1","Cruza hacia Fayenza","Las sombras de pájaro del puente sueltan plumas y a Ducklett.","p"]]},
+   {"es":"Ciudad Fayenza","en":"Driftveil City","pasos":[
+     ["e2","Limpia el Almacén Frigorífico","Clay no te reta hasta echar al Plasma de allí. Vence a Zinzolin y sus 4 soldados en el contenedor.","p"],
+     ["e3","Vence a Yakón","Mina con ascensores. Solo hay que vencer a 3 de sus 5 entrenadores. Yakón: Krokorok, Palpitoad y Golett Nv.29, Excadrill Nv.31. Premio: Medalla Temblor y MT Terratemblor.","p"],
+     ["evuelo","Vence a Bel y coge el MO Vuelo","Bel va de Nv.27 a 29.","p"],
+     ["e5","Recoge el Casco Dentado y Escaldar","Casco Dentado: un operario en el callejón del Almacén. MT Escaldar: esquina sureste de la primera pista de hielo.","p",1],
+     ["e6","Tutor de Pokémon iniciales","Casa a la derecha del mercado: enseña Hierba Plancha si tu inicial te tiene cariño.","p",1],
+     ["e7","Objetos del mercado","Hombre de Negro: Cinta Experto, con un Pokémon Nv.30+. Niña del Centro: 3 Acopio Ball.","p",1]],
+    "objetos":["Campana Concha: anciano del Centro, con más de 50 vistos","Ocultos: Escama Corazón y Perla en el mercado","Súper Ball: camino del noroeste","Piedra Agua: junto al faro, con Surf","Almacén, exterior: Súper Poción (oculta), Éter, Buceo Ball (oculta), Proteína, Escama Corazón","Almacén, interior: Red Ball, Antihielo, Súper Poción, Antiderretir y MT Afilagarras"],
+    "salvajes":"Almacén: Herdier, Timburr, Vanillite, Minccino, Nv.24-28. Agua: Alomomola, Frillish."}]},
+  {"id":"f6","med":6,"nom":"Medalla 6 · Hasta Gerania","lim":"Límite 38 → 43","lugares":[
+   {"es":"Ruta 6 y Cueva Electrorroca","en":"Route 6 · Chargestone Cave","actual":true,"pasos":[
+     ["cura","Cura a Serperior","Tu captura lo muestra con 4 de 106 PS.","t"],
+     ["evo","Deja evolucionar a Dratini y Bagon","Los dos evolucionan a Nv.30 y siguen sin hacerlo a Nv.35. Gana un combate con cada uno y no canceles la evolución. Es la mejora más grande que tienes a mano.","t"],
+     ["obj","Equipa objetos","Serperior, Simipour, Graveler, Dratini y Bagon van sin objeto, y tienes 8 equipables en la mochila.","t"],
+     ["cueva","Recoge lo de la cueva","Revisa 1F, B1F y B2F con la lista de objetos de abajo. El Huevo Suerte te lo da la Prof. Encina en el 1F y el Caramelo Raro está en B2F.","p"],
+     ["n4","Gana a N","Zoroark Nv.30 disfrazado de Joltik, más Ferroseed, Boldore y Klink Nv.28. Mira la matriz antes de entrar. Hay varios soldados del Plasma, Nv.26-28, en B1F.","p"]],
+    "objetos":["1F: Huevo Suerte, Antiparalizador, Revivir, Sana Ball, Elixir (oculto), Hiperpoción, Hierro, Más PS (oculto), Imán","B1F: Antiparalizador (oculto), 2 Pepitas, Revivir (oculto), Turno Ball, Piedra Trueno","B2F: Antiparalizador (oculto), Polvo Brillo, Polvo Estelar (oculto), Hiperpoción, Caramelo Raro"],
+    "salvajes":"Joltik, Ferroseed, Klink, Boldore y Nosepass Nv.27-29. Tynamo Nv.28-29 raro. Rocas: Boldore, Roggenrola. Polvo: Drilbur, Excadrill."},
+   {"es":"Ciudad Loza","en":"Mistralton City","pasos":[
+     ["loza1","Haz parada y compra","El Recordador de movimientos usa Escama Corazón y el Quita-movimientos borra MO. La tienda vende MT.","p"]],
+    "objetos":["Ocultos en los huertos del sur: Repelente, Antiparalizador, Elixir","Pico Afilado: veterano del edificio de carga","MT Caída Libre: bajo el ala del avión, lado este","MT Golpe Aéreo: joven al sur de la pista, tras vencer a Gerania"]},
+   {"es":"Ruta 7 y Torre Cielo","en":"Route 7 · Celestial Tower","pasos":[
+     ["torre","Sube la torre y toca la campana","Gerania no estará en su gimnasio. Sube, habla con ella y toca la campana arriba del todo. Cruza la hierba alta por las pasarelas, sin bajarte si quieres evitar combates.","p"],
+     ["torre2","Captura un Litwick si quieres Fantasma","Evoluciona a Chandelure con la Piedra Noche. Hay horda en 2F.","p",1]],
+    "objetos":["2F: Súper Poción, MT Fuego Fatuo","3F: Hechizo","4F: Revivir, MT Garra Umbría"],
+    "salvajes":"Litwick, Elgyem, Misdreavus, Golbat Nv.27-31. Azotea: Drifloon, Drifblim, Murkrow, Honchkrow en sombras."},
+   {"es":"Gimnasio de Loza","en":"Mistralton Gym","pasos":[
+     ["gerania","Vence a Gerania","Cañones que te lanzan; el que hay tras ella es un atajo a la salida. 5 entrenadores de Nv.32-33 antes. Gerania: Swoobat, Sigilyph y Tranquill Nv.31, Unfezant Nv.32, Swanna Nv.34. Tu equipo ya los supera. Premio: Medalla Jet y MT Acróbata.","p"]],
+    "objetos":["Agua Fresca: Clyde, a la entrada"]}]},
+  {"id":"f7","med":7,"nom":"Medalla 7 · Hasta Junco","lim":"Límite 43 → 46","lugares":[
+   {"es":"Monte Tuerca","en":"Twist Mountain","pasos":[
+     ["surf","Vence a Cheren y coge Surf","Un operario bloquea la entrada hasta tener la Medalla Jet. Tras vencer a Cheren en la entrada, Mirto te da el MO Surf. Una fuente lo sitúa en la Ruta 7; este es el dato de las dos wikis más detalladas.","p"],
+     ["tuerca","Cruza hasta Ciudad Teja","14 entrenadores, hasta Nv.36. Golett llega a Nv.43 y evoluciona a Golurk en esta zona.","p"]],
+    "objetos":["Ultra Ball en la entrada","Dentro: Revivir, Cura Total, Piedra Lunar, Hiperpoción, Éter, Pepita, Más PP, Súper Ball, Revestimiento Metálico (solo invierno)","Ocultos: Revivir, Súper Poción, Polvo Estelar, Éter, Proteína, Hierro, Caramelo Raro","MT Foco Resplandor y MT Sustituto"],
+    "salvajes":"Boldore, Cubchoo, Durant, Gurdurr, Woobat, Cryogonal, Heatmor, Onix Nv.29-33. Polvo: Drilbur, Excadrill, Larvitar."},
+   {"es":"Ciudad Teja","en":"Icirrus City","pasos":[
+     ["junco","Vence a Junco","Hielo deslizante con interruptores de colores. 6 entrenadores Nv.35-37. Junco: Dewgong, Walrein y Cryogonal Nv.37, Vanilluxe Nv.38, Beartic Nv.40. Hielo hace ×2 a tus Dragón. Premio: Medalla Glaciar y MT Vaho Gélido.","p"],
+     ["teja1","Pásate por el Club de Fans","El presidente da Repartir Exp., Amuleto Puro o Roca del Rey según los niveles que suba tu Pokémon.","p",1]],
+    "objetos":["MT Demolición: anciana del Centro","Ocultos en el acantilado este: Súper Ball, Turno Ball","Solo invierno: Max Poción (oculta), Caramelo Raro, Caramelo Furia, Seta Pequeña"],
+    "salvajes":"Croagunk, Karrablast, Palpitoad, Shelmet, Stunfisk Nv.32-34. Hordas de Karrablast y Shelmet."}]},
+  {"id":"f8","med":8,"nom":"Medalla 8 · Hasta Iris","lim":"Límite 46 → 56","lugares":[
+   {"es":"Torre Dragoespiral","en":"Dragonspiral Tower","pasos":[
+     ["espiral","Sube con Junco y Cheren","N despierta al dragón legendario y se marcha. Lleva Revivir, Cuerda Huida y curas de sobra.","b"]]},
+   {"es":"Castillo Ancestral y Museo","en":"Relic Castle · Nacrene Museum","pasos":[
+     ["ancestral","Baja hasta el fondo del castillo","Vuela al desierto. Vence a Ryoku y encuentra a Ghetsis y Mirto en el último piso. No corras sobre la arena: te hundes.","b"],
+     ["museo","Recoge la piedra en el Museo de Esmalte","La piedra no estaba en el castillo. Aloe te la da en el Museo.","p"]]},
+   {"es":"Ruta 8, Pantano Teja y Puente Tubular","en":"Route 8 · Moor of Icirrus · Tubeline Bridge","pasos":[
+     ["ruta8","Vuelve a Teja y cruza hacia el este","Ghetsis aparece en el puente la primera vez. Los viernes de noche hay banda de moteros.","p"]],
+    "objetos":["MT Nitrocarga: Chica Guerrera del puente"]},
+   {"es":"Ruta 9 y Centro Comercial Nueve","en":"Route 9 · Shopping Mall Nine","pasos":[
+     ["nueve","Compra para la Liga","La gran tienda de MT y vitaminas de la región.","b"]]},
+   {"es":"Ciudad Caolín","en":"Opelucid City","pasos":[
+     ["lirio","Vence a Iris","La wiki de PokeMMO da a Iris como líder; su equipo y el puzle no los he podido leer. En el juego original: Fraxure y Druddigon Nv.41, Haxorus Nv.43. Premio: Medalla Leyenda.","p"],
+     ["master","Recoge la Master Ball","Te la da la Prof. Encina tras la medalla. Tus notas dicen que no sirve con el legendario de historia.","p"]],
+    "objetos":["Lazo Destino: chica entre el gimnasio y la Casa de Batalla","Ocultos: Max Repelente, Ultra Ball","Casa de Lirio, 2F: Piedra Pómez, Diana","Pila: Bach, si le enseñas un Pokémon que conozca Carga"],
+    "salvajes":"Sin salvajes. Lou y Eileen dan combates diarios en la Casa de Batalla, Nv.39."}]},
+  {"id":"f9","med":9,"nom":"Liga de Teselia","lim":"Límite 56 → 100","lugares":[
+   {"es":"Ruta 10 y Calle Victoria","en":"Route 10 · Victory Road","pasos":[
+     ["nivel","Sube el equipo parejo a Nv.50-54","La guía de la comunidad pide finales de los 40 a principios de los 50. Shelgon evoluciona a Nv.50 y Dragonair a Nv.55.","p"],
+     ["vict","Cruza la Calle Victoria","Con Surf y Fuerza. Entrenadores Nv.43-46. Lleva 20-30 Hiperpociones, 10-15 Curas Totales, 8-12 Revivir, 3-6 Éter o Elixir y 2-3 Cuerdas Huida.","p"]],
+    "objetos":["1F: Revivir, Caramelo Raro (con Surf), Ultra Ball, Pepita","2F (ocultos): Ultra Ball, MT Mofa, Revivir Máx., Max Poción","3F: Hiperpoción (oculta), MT Garra Dragón","4F: Hiperpoción, Revivir (oculto), Calcio, Cura Total (oculta), Carburante (oculto)","5F: MT Voltio Cruel","6F: Cura Total"],
+    "salvajes":"Boldore, Druddigon, Durant, Mienfoo, Onix, Woobat Nv.43-45. Horda de Deino Nv.41-42. Rocas: Gigalith. Polvo: Excadrill."},
+   {"es":"Liga Pokémon","en":"Pokémon League","pasos":[
+     ["e4","Vence a Anís, Aza, Catleya y Lotto","En el orden que quieras, con cura total entre ellos. Cinco Pokémon de Nv.48-50 cada uno. Tienes cada matriz preparada.","p"]]},
+   {"es":"Castillo de N","en":"N's Castle","pasos":[
+     ["castillo","Sube y vence a N y a Ghetsis","Solo he podido leer el juego original: N lleva al dragón Nv.52 y cinco más Nv.50. Tus notas dicen Zekrom, pero con ROM Negro debería ser Reshiram. Anthea cura gratis dentro, según tus notas.","b"]]}]},
+  {"id":"f10","med":10,"nom":"Después de la Liga","lim":"Límite 100","lugares":[
+   {"es":"Teselia, sin límite","en":"Post-game","pasos":[
+     ["rutina","Empieza la rutina de combates","Reencuentros de Liga y gimnasios en dobles de Nv.80-85. 18 h de espera. Mira la pestaña Dinero.","p"],
+     ["sabios","Caza a los Sabios","Gorm (Solar, MT Danza Espada), Zinzolin (Almacén, MT Afilagarras), Bronius (Electrorroca, MT Pulimento), Ryoku (Castillo, MT Maquinación). Rood y Giallo, según el juego original.","p",1],
+     ["cintia","Cintia en Primavera","Villa de Undella, una vez al día, solo en Primavera. Lleva Nv.60 o más.","p",1],
+     ["post","Explora lo que abre Surf y Cascada","Rutas 17-18, Laboratorio P2 (Rayo), Cueva Loza, Cueva del Desafío, Bahía Undella (Buceo), Sima Gigante y Volcarona en el Castillo Ancestral.","p",1],
+     ["kanto","Sal a la siguiente región","Cada región tiene su propio límite: un Nv.60 se desmaya al salir a combatir si allí no tienes medallas.","p"]]}]}
+ ]
+}
