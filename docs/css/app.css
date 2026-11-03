@@ -283,3 +283,42 @@ dialog[open]{animation:dlg 200ms var(--ease-out)}
 
 .dato b span{font:inherit;letter-spacing:inherit;text-transform:none;color:inherit}
 @media (max-width:760px){.ev-cont{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- Guía del dinero ---------- */
+.metas{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.meta{background:var(--panel);border:1px solid var(--borde);padding:12px;display:grid;gap:6px;align-content:start;min-width:0}
+.meta p{font-size:15px}
+.meta.ok{border-color:var(--verde)}.meta.ok h3{color:var(--verde)}
+.meta.act{border:2px solid var(--oro)}.meta.act .bv{height:10px}.meta.act .bv i{background:var(--oro)}
+.lugares.sueltos{padding:0}
+.lugares.sueltos .lugar{background:var(--panel)}
+.numerada{margin:0;padding:0 14px 12px 34px;display:grid;gap:7px;font-size:15px}
+.met-c{padding:0 14px 14px;display:grid;gap:8px;font-size:15px}
+.met-c .numerada{padding:0 0 0 22px}
+.frase{font-size:16px}
+.fichita{display:flex;gap:20px;flex-wrap:wrap;margin:0}
+.fichita dt{font:600 11px var(--f-rotulo);letter-spacing:.05em;text-transform:uppercase;color:var(--apagado)}
+.fichita dd{margin:0;font-size:14px}
+.pill{font:700 12px/1.2 var(--f-rotulo);padding:5px 8px;text-align:center;flex:none;max-width:48%}
+.pill.si{background:var(--verde);color:#0e1d25}
+.pill.no{border:1px solid var(--borde);color:var(--apagado)}
+.resumen-sim{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:2px solid var(--borde)}
+.dato.grande b{font-size:clamp(20px,2.6vw,30px);color:var(--oro)}
+.orden{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.orden li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;align-items:center;background:var(--panel);border:1px solid var(--borde);padding:10px 12px}
+.orden li small{display:block}
+.orden .bv{grid-column:1/-1}.orden .bv i{background:var(--oro)}
+.aviso-b{border-color:var(--rojo)}
+.num{background:var(--abismo);border:1px solid var(--borde);padding:9px;width:130px;color:var(--tinta)}
+.calc select{background:var(--abismo);border:1px solid var(--borde);padding:9px;color:var(--tinta)}
+#gtlres b.ok{color:var(--verde)}#gtlres b.mal{color:var(--rojo)}
+.tablazo.sin{border:0;margin:0 12px 12px}
+.dicc{margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px}
+.dicc div{background:var(--panel);border:1px solid var(--borde);padding:10px 12px}
+.dicc dt{font:700 15px var(--f-rotulo)}.dicc dd{margin:2px 0 0;font-size:15px}
+#main[data-entra] .met,#main[data-entra] .orden li{animation:vista 200ms var(--ease-out) backwards}
+@media (max-width:760px){.resumen-sim{grid-template-columns:repeat(2,minmax(0,1fr))}.lugar.met>summary{flex-direction:column;align-items:flex-start}.pill{max-width:100%}}
+
+/* Cifras siempre legibles: la letra de píxeles confunde 2, 5 y 8 */
+.dato b,.dato input,.dato.grande b,.timer b,.ev-c b,.evento .cuenta,.medalla,.res b{font-family:var(--f-rotulo);font-variant-numeric:tabular-nums}
+.medalla{font-size:15px}

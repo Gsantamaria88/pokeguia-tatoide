@@ -55,6 +55,19 @@ for m in partida["equipo"]:
         if mov[1] not in TIPOS:
             errores.append(f"tipo desconocido en {m['sp']} / {mov[0]}: {mov[1]}")
 
+din = carga("dinero")
+mids = [m["id"] for m in din["metodos"]]
+for repetido in {i for i in mids if mids.count(i) > 1}:
+    errores.append(f"método repetido: {repetido}")
+for m in din["metodos"]:
+    for campo in ("frase", "paga", "pasos", "necesitas", "errores"):
+        if not m.get(campo):
+            errores.append(f"método {m['id']} sin {campo}")
+    if m["req"].get("r") and m["req"]["r"] not in din["regiones"]:
+        errores.append(f"método {m['id']}: región desconocida")
+if sum(r["gyms"] for r in din["regiones"].values()) != sum(r["pay"] for r in din["rutaGimnasios"]):
+    errores.append("los gimnasios por región no suman lo mismo que la ruta")
+
 lista = RAIZ / "privado" / "vetadas.txt"
 if lista.exists():
     PRIVADO = re.compile("|".join(x for x in lista.read_text(encoding="utf-8").split("\n") if x), re.I)

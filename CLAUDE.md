@@ -20,6 +20,7 @@ docs/                   la web (GitHub Pages sirve esta carpeta)
   datos/partida.json    ← estado real: medallas, dinero, equipo, pasos
   datos/ruta.json       ← paso a paso por fases y lugares
   datos/rivales.json    ← equipos para la matriz
+  datos/dinero.json     ← guía del dinero: métodos, plan, simulador, GTL, equipos
   img/ fonts/           sprites (estáticos y animados), iconos y tipografías
 scripts/validar.py      revisa datos y fugas; sin dependencias
 scripts/comprobar.mjs   prueba en navegador
@@ -57,6 +58,7 @@ Lo frecuente, rápido y discreto (200 ms o menos, solo transform y opacity); lo 
 
 Bloquean el acceso automático: foros, web y Condiciones de pokemmo.com (403), Bulbapedia, StrategyWiki, GameFAQs, Fandom.
 ShoutWiki bloquea por tandas: aún sin leer Aloe, Iris, castillo de N, Rutas 1-10 (salvo las que figuran), Dragoespiral.
+Dinero sin confirmar: espera de la Liga (6 h ShoutWiki, 18 h PikaMMO), comisión del GTL (5 % wiki, 2 % PikaMMO), cómo suben los niveles de los reencuentros, precios de Halloween. Pregúntaselo a Guillermo cuando lo vea en el juego.
 Si Guillermo pega el texto o lo copia del navegador, se completa. No usar `pokemmobot`: vende bots.
 
 ## Reglas de juego

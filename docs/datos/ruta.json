@@ -46,7 +46,7 @@
      ["c3","Recupera al Munna de Bel","Sigue al Plasma hasta su guarida junto a la calle del gimnasio. Antes, Camus no acepta el reto.","p"],
      ["c4","Vence a Camus","Colmena con botones y paredes de miel. 5 Arlequines Nv.20-21. Camus: Dwebble y Swadloon Nv.21, Whirlipede Nv.22, Leavanny Nv.23. Premio: Medalla Élitro y MT Estoicismo.","p"],
      ["c5","Consigue el Repartir Exp.","Vence a los empleados de la planta 55 y al Presidente Geoff.","p",1],
-     ["c6","Consigue la Moneda Amuleto","Vence a los bailarines Mickey, Edmond y Raymond. Cuesta poco y da +50 % de dinero.","p",1],
+     ["c6","Consigue la Moneda Amuleto","Es un regalo en la ciudad (hombre de verde; otra página dice que al vencer a los bailarines Mickey, Edmond y Raymond). Da +50 % de dinero durante 1 hora.","p",1],
      ["c7","Coge el Mineral Evolutivo","Científico, 1F del edificio del noreste. Pide 25 Pokémon vistos.","p",1],
      ["c8","Elige Piedra Hoja, Fuego o Agua","Científico del muelle Pulgar. Solo una.","p",1]],
     "objetos":["Destello: hombre tras el contenedor de Calle Estrecha","Planta 47: Veloz Ball, Turno Ball, Periscopio y Revivir","Planta 55: Súper Poción","MT Descanso: excursionista, planta 11 del edificio oeste","MT Atracción: niña, planta 47 del edificio sureste","Baya Yache y Bola Humo: Iris, tras rescatar a Munna","Una baya al día del Arlequín de Studio Castelia","Master Ball y otros: Hombre de Negro en el Centro, según intercambios con otras ID"],
@@ -141,7 +141,7 @@
      ["castillo","Sube y vence a N y a Ghetsis","Solo he podido leer el juego original: N lleva al dragón Nv.52 y cinco más Nv.50. Tus notas dicen Zekrom, pero con ROM Negro debería ser Reshiram. Anthea cura gratis dentro, según tus notas.","b"]]}]},
   {"id":"f10","med":10,"nom":"Después de la Liga","lim":"Límite 100","lugares":[
    {"es":"Teselia, sin límite","en":"Post-game","pasos":[
-     ["rutina","Empieza la rutina de combates","Reencuentros de Liga y gimnasios en dobles de Nv.80-85. 18 h de espera. Mira la pestaña Dinero.","p"],
+     ["rutina","Empieza la rutina de combates","Reencuentros de Liga y gimnasios en dobles. Los rivales pueden llegar a Nv.80-85. Sigue la estrategia de la pestaña Dinero.","p"],
      ["sabios","Caza a los Sabios","Gorm (Solar, MT Danza Espada), Zinzolin (Almacén, MT Afilagarras), Bronius (Electrorroca, MT Pulimento), Ryoku (Castillo, MT Maquinación). Rood y Giallo, según el juego original.","p",1],
      ["cintia","Cintia en Primavera","Villa de Undella, una vez al día, solo en Primavera. Lleva Nv.60 o más.","p",1],
      ["post","Explora lo que abre Surf y Cascada","Rutas 17-18, Laboratorio P2 (Rayo), Cueva Loza, Cueva del Desafío, Bahía Undella (Buceo), Sima Gigante y Volcarona en el Castillo Ancestral.","p",1],
