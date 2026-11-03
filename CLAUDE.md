@@ -21,6 +21,9 @@ docs/                   la web (GitHub Pages sirve esta carpeta)
   datos/ruta.json       ← paso a paso por fases y lugares
   datos/rivales.json    ← equipos para la matriz
   datos/dinero.json     ← guía del dinero: métodos, plan, simulador, GTL, equipos
+  datos/objetos.json    ← objetos por Pokémon, equipables, MT, para el entrenador
+  datos/personaje.json  ← ficha, mejoras y aspecto
+  datos/cosmeticos.json ← catálogo, lo genera scripts/generar_cosmeticos.py
   img/ fonts/           sprites (estáticos y animados), iconos y tipografías
 scripts/validar.py      revisa datos y fugas; sin dependencias
 scripts/comprobar.mjs   prueba en navegador

@@ -3,8 +3,10 @@
  "dinero": 70681,
  "hechos": {},
  "timers": {},
+ "ficha": {"dex": 17, "bp": 0, "h": 14},
+ "tengo": {"MT Avivar": true, "MT Represalia": true, "MT Detección": true, "MT Bucle Arena": true, "MT Terratemblor": true, "MT Estoicismo": true, "MT Escaldar": true, "MT Hierba Lazo": true, "MT Voltiocambio": true, "MO Corte": true, "MO Destello": true, "MO Vuelo": true, "Bici": true},
  "evento": {"gat": 0, "fla": 20, "inc": 0},
- "actualizado": "2026-11-03T12:00:00Z",
+ "actualizado": "2026-11-03T13:30:00Z",
  "equipo": [
   {"sp":"Serperior","nv":36,"nat":"dócil","mov":[["Corte","normal",50],["Ciclón Hojas","planta",65],["Portazo","normal",80],["Hoja Aguda","planta",90]]},
   {"sp":"Simipour","nv":38,"nat":"seria","mov":[["Escaldar","agua",80],["Hidrobomba","agua",120],["Triturar","siniestro",80],["Golpe Cabeza","normal",70]]},

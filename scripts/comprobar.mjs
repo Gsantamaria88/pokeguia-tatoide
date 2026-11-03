@@ -21,8 +21,8 @@ const b = await chromium.launch();
 let fallos = 0;
 const mal = (t) => { fallos++; console.log('FALLO', t); };
 for (const [nombre, w, h, vistas] of [
-  ['consola', 1280, 800, ['ahora', 'ruta', 'combate', 'dinero', 'regiones', 'mas']],
-  ['movil', 390, 844, ['ahora', 'ruta', 'combate', 'dinero', 'regiones', 'mas']],
+  ['consola', 1280, 800, ['ahora', 'ruta', 'combate', 'objetos', 'dinero', 'personaje', 'regiones', 'mas']],
+  ['movil', 390, 844, ['ahora', 'ruta', 'combate', 'objetos', 'dinero', 'personaje', 'regiones', 'mas']],
 ]) {
   const ctx = await b.newContext({ viewport: { width: w, height: h } });
   const p = await ctx.newPage();
@@ -32,6 +32,9 @@ for (const [nombre, w, h, vistas] of [
   for (const v of vistas) {
     await p.goto(url + '#' + v);
     await p.waitForSelector('.vista');
+    await p.waitForTimeout(650);
+    const vis = await p.evaluate(() => [...document.querySelectorAll('.vista *')].filter((e) => getComputedStyle(e).opacity === '0' && !e.closest('.evo')).length);
+    if (vis) mal(`invisibles ${nombre}/${v}: ${vis}`);
     const des = await p.evaluate(() => document.documentElement.scrollWidth - innerWidth);
     if (des > 0) mal(`desborde ${nombre}/${v}: ${des}px`);
     await p.screenshot({ path: `${salida}/${nombre}-${v}.png`, fullPage: v !== 'ruta' });
@@ -70,6 +73,35 @@ for (const [nombre, w, h, vistas] of [
     await p.click('[data-rival="gerania"]');
     await p.click('[data-modo="tabla"]');
     if (!(await p.locator('.matriz').count())) mal('tabla');
+    // Objetos y personaje
+    await p.goto(url + '#objetos');
+    await p.waitForSelector('.vista');
+    await p.waitForTimeout(500);
+    await p.screenshot({ path: `${salida}/consola-obj-equipo.png`, fullPage: true });
+    if ((await p.locator('.obj-rec').count()) !== 12) mal('recomendaciones de objetos');
+    await p.click('[data-osec="equipables"]');
+    await p.click('[data-tengo="Mineral Evolutivo"]');
+    await p.click('[data-ofil="tengo"]');
+    if (!(await p.innerText('.objetos')).includes('Mineral Evolutivo')) mal('marcar objeto');
+    await p.click('[data-ofil="todo"]');
+    await p.waitForTimeout(250);
+    await p.screenshot({ path: `${salida}/consola-obj-equipables.png` });
+    for (const s of ['evolucion', 'mt', 'mios', 'botiquin']) await p.click(`[data-osec="${s}"]`);
+    await p.goto(url + '#personaje');
+    await p.waitForSelector('.vista');
+    await p.screenshot({ path: `${salida}/consola-per-ficha.png`, fullPage: true });
+    await p.click('[data-psec="mejorar"]');
+    await p.click('[data-psec="look"]');
+    await p.click('[data-psec="catalogo"]');
+    await p.fill('#cq', 'alas de');
+    if (!(await p.innerText('#cosres')).includes('Alas de Angel')) mal('catálogo');
+    await p.screenshot({ path: `${salida}/consola-per-cat.png` });
+    await p.goto(url + '#ruta');
+    await p.waitForSelector('#q');
+    await p.fill('#q', 'mineral evolutivo');
+    await p.click('[data-ir-obj]');
+    await p.waitForTimeout(250);
+    if (!(await p.evaluate(() => location.hash)).includes('objetos')) mal('buscador a objetos');
     // Guía del dinero: simulador, métodos, calculadora y buscador
     await p.goto(url + '#dinero');
     await p.waitForSelector('.vista');

@@ -322,3 +322,26 @@ dialog[open]{animation:dlg 200ms var(--ease-out)}
 /* Cifras siempre legibles: la letra de píxeles confunde 2, 5 y 8 */
 .dato b,.dato input,.dato.grande b,.timer b,.ev-c b,.evento .cuenta,.medalla,.res b{font-family:var(--f-rotulo);font-variant-numeric:tabular-nums}
 .medalla{font-size:15px}
+
+/* ---------- Objetos y personaje ---------- */
+.obj-rec{display:grid;gap:3px;background:var(--abismo);padding:8px 10px;border-left:3px solid var(--oro);font-size:15px}
+.obj-rec b{font:700 15px var(--f-rotulo)}
+.et{font:700 11px var(--f-rotulo);letter-spacing:.05em;text-transform:uppercase;color:var(--oro)}
+.et.luego{color:var(--cian)}
+.objetos{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:10px}
+.obj{background:var(--panel);border:1px solid var(--borde);padding:12px;display:grid;gap:8px;align-content:start;min-width:0;font-size:15px}
+.obj header{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.obj h3 small{display:block;font:500 12px var(--f-rotulo);color:var(--apagado)}
+.fichita.col{display:grid;gap:5px}
+.fila-acc{align-items:center}
+.tengo{white-space:nowrap;font-size:13px;padding:0 9px}
+.tengo.si{background:var(--verde);color:#0e1d25;border-color:var(--verde)}
+.btn.enlace{display:inline-block;text-decoration:none}
+.numerada.sin{padding:0 0 0 22px}
+.ficha.pj .ficha-b{grid-template-columns:repeat(3,minmax(0,1fr))}
+.medallas span.medalla{cursor:default}
+.cos{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:4px}
+.cos li{background:var(--panel);border:1px solid var(--borde);padding:7px 10px;font-size:14px}
+.cos small{color:var(--apagado);display:block;font-size:12px}
+#main[data-entra] .obj{animation:vista 200ms var(--ease-out) backwards}
+@media (max-width:760px){.barra{grid-template-columns:repeat(7,minmax(0,1fr))}.barra .nav{font-size:10px}.ficha.pj .ficha-b{grid-template-columns:repeat(2,minmax(0,1fr))}}

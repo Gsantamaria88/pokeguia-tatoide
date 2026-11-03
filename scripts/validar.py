@@ -68,11 +68,25 @@ for m in din["metodos"]:
 if sum(r["gyms"] for r in din["regiones"].values()) != sum(r["pay"] for r in din["rutaGimnasios"]):
     errores.append("los gimnasios por región no suman lo mismo que la ruta")
 
+obj, per, cos = carga("objetos"), carga("personaje"), carga("cosmeticos")
+nfases = {f["id"]: len(f["lugares"]) for f in ruta["fases"]}
+for o in obj["equipables"] + obj["para_mi"]:
+    if o.get("ir"):
+        f, i = o["ir"].split(":")
+        if f not in nfases or int(i) >= nfases[f]:
+            errores.append(f"enlace roto en {o['es']}: {o['ir']}")
+nomb = [o["es"] for o in obj["equipables"] + obj["para_mi"]]
+for repetido in {i for i in nomb if nomb.count(i) > 1}:
+    errores.append(f"objeto repetido: {repetido}")
+if not all(cos.values()):
+    errores.append("catálogo con un grupo vacío")
+
 lista = RAIZ / "privado" / "vetadas.txt"
 if lista.exists():
     PRIVADO = re.compile("|".join(x for x in lista.read_text(encoding="utf-8").split("\n") if x), re.I)
     publicos = [p for p in RAIZ.rglob("*") if p.is_file() and ".git" not in p.parts and "privado" not in p.parts
-                and p.suffix in {".json", ".js", ".mjs", ".html", ".md", ".py", ".css", ".webmanifest"}]
+                and p.suffix in {".json", ".js", ".mjs", ".html", ".md", ".py", ".css", ".webmanifest"}
+                and p.name != "cosmeticos.json"]  # nombres del propio juego
     for archivo in publicos:
         if PRIVADO.search(archivo.read_text(encoding="utf-8")):
             errores.append(f"dato privado en {archivo.relative_to(RAIZ)}")

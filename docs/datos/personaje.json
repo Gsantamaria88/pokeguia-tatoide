@@ -1,0 +1,71 @@
+{
+ "ficha_ayuda": [
+  ["Medallas", "Sube tu límite de nivel en esa región. Es tu progreso principal."],
+  ["Máxima Obediencia", "Hasta qué nivel te obedecen aquí. Se calcula con tus medallas."],
+  ["Pokédex", "Pokémon capturados. Abre premios: 25 para el Mineral Evolutivo, por ejemplo. Captura todo lo nuevo que veas."],
+  ["Dinero", "Mira la guía de la pestaña Dinero."],
+  ["Puntos de Batalla", "Otra moneda. Se gana en reencuentros de la Liga y se gasta en el Battle Frontier."],
+  ["Tiempo jugado", "Solo es un dato. No da ventajas."]
+ ],
+ "mejorar": [
+  {"t": "Gana medallas y Ligas", "d": "Es lo que más te mejora: sube tu límite de nivel y abre zonas, movimientos, el GTL y los reencuentros.", "p": "p"},
+  {"t": "Viaja con comodidad", "d": "Ya tienes Bici y Vuelo. Pon lo que uses en la barra de arriba, en las teclas 1 a 9. Ya tienes 3 puestos.", "p": "t"},
+  {"t": "Libera tu equipo de MO", "d": "Las Movi-Ocarinas (200 PP cada una) usan Surf, Vuelo o Corte sin ocupar un hueco de ataque. También se compran con dinero del juego en el GTL.", "p": "c"},
+  {"t": "Amplía el PC", "d": "La Tienda de Regalos vende una Expansión de PC (800 PP, 60 plazas) y de Caja de Combate (500 PP, 3 cajas). También hay en el GTL. Tiene un máximo por personaje.", "p": "c"},
+  {"t": "Únete a un equipo", "d": "Un equipo da compañía para Link, intercambios y eventos. No he podido leer sus ventajas: míralas en el menú social.", "p": "b"},
+  {"t": "Estado Donador", "d": "+25 % de EXP, +10 % de variocolor, +10 % de eclosión y +5 % de dinero de entrenadores, en toda la cuenta. Se compra con PP, o con dinero del juego en el GTL. El tiempo corre aunque no juegues: actívalo cuando vayas a jugar mucho. No hace falta.", "p": "c"},
+  {"t": "Caja de Cuenta", "d": "Una caja compartida entre personajes de tu cuenta. Los Pokémon de regalo y lo no intercambiable no entran.", "p": "c"},
+  {"t": "Cuida tu nombre y tu cuenta", "d": "Un nombre ofensivo se bloquea. Vender cuentas o personajes está prohibido, según los propios textos del juego.", "p": "c"}
+ ],
+ "look_pasos": [
+  "Abre el menú de arriba a la derecha y entra en Personalización. Allí eliges lo que ya tienes.",
+  "Mira la pestaña Cosméticos de la mochila. Tu captura la muestra vacía: de momento no tienes ninguno.",
+  "Busca en Tiendas. El juego dice que la ropa y los peinados se compran en tiendas, en la Tienda de Regalos y en otros lugares. En Terracota venden una gorra y mochilas.",
+  "Busca en el GTL: pulsa P y filtra por cosméticos. Mira el precio: varía muchísimo.",
+  "Prueba un tinte si el objeto lo permite: el juego avisa si no se puede teñir.",
+  "Guárdalo y mira cómo queda en el mundo y en el combate."
+ ],
+ "look_base": [
+  {"t": "Ropa, sombreros y peinados", "d": "Cámbialos cuando quieras desde Personalización. Se compran en tiendas, en la Tienda de Regalos, en el GTL o con eventos.", "p": "c"},
+  {"t": "Apariencia base", "d": "Es tu cuerpo: tono de piel, género y lo inicial. Solo se cambia con objetos: Cambio de Imagen, el de cambio de sexo o el Espejo Misterioso. La wiki dice que los dos primeros salieron de la Tienda de Regalos en 2024, así que busca primero en el GTL.", "p": "c"},
+  {"t": "Tintes", "d": "16 colores, a 75 PP cada uno. Cambian el color de objetos que lo permitan y se gastan al usarlos.", "p": "c"},
+  {"t": "Partículas", "d": "Son de tus Pokémon, no tuyas: salen al entrar en combate. Se asignan a un Pokémon y el objeto se gasta. Hay más de 30 y salen de eventos o de la tienda.", "p": "c"},
+  {"t": "Bicicletas", "d": "La Bici normal es la que usas para moverte. El color o la moto cambian el aspecto: Motocicleta, 1.000 PP.", "p": "c"},
+  {"t": "Nombre", "d": "Contrato de Cambio de Nombre: 1.000 PP en la Tienda de Regalos. También sirve la placa para el nombre de tu equipo.", "p": "p"}
+ ],
+ "fuentes": [
+  {"t": "Tiendas del juego", "d": "Lo más barato. Terracota: gorra de dos tonos, mochila y bolso. Caolín tiene una lista de sombreros. Se paga con dinero del juego. No he encontrado la lista por ciudad: mira en cada tienda.", "p": "p"},
+  {"t": "GTL", "d": "Casi todo lo que no esté bloqueado. Los precios van de 10 mil a 50 millones $, según lo raro que sea.", "p": "p"},
+  {"t": "Tienda de Regalos", "d": "Se paga con Puntos de Premio (PP). Fijos, sobre todo a 500 o 1.000 PP. Los PP se consiguen con dinero real o en eventos oficiales. También puedes comprar vales de PP en el GTL con dinero del juego.", "p": "c"},
+  {"t": "Eventos de temporada", "d": "Halloween, Navidad, Año Nuevo Lunar. Muchos solo salen esas semanas y vuelven al año siguiente. Otros son solo de evento y no vuelven.", "p": "p"},
+  {"t": "Premios de combate", "d": "Algunos son de PvP o de misiones, y no todos se pueden vender.", "p": "p"}
+ ],
+ "tienda": [
+  ["Sombreros, 500 PP", "Nido de pájaro, orejas de gato negro, gorro de pompón, aureola, casco de moto, máscara ninja, vaquero, chef, gorro"],
+  ["Sombreros, 1.000 PP", "Máscara maldita, casco vikingo, auriculares, auriculares de gato"],
+  ["Pelo, 500 PP", "Afro, afro disco, cresta falsa, escena invertida, de lado"],
+  ["Ojos, 500 PP", "Lentillas amatista, rojas y violetas, gafas llama, gafas, rockero, gafas de sol, gafas de natación"],
+  ["Parte superior, 500 PP", "Béisbol, traje de negocios, marinero, chándal, enfermera, ninja, armadura samurái"],
+  ["Parte superior, 1.000 PP", "Armadura de combate, sirvienta, gi de tortuga"],
+  ["Espalda, 500 PP", "Colas de gatito, mapache o ardilla"],
+  ["Espalda, 1.000 PP", "Alas de ángel, diablo, mariposa o hada, capa, bufanda ninja, poncho"],
+  ["Otros", "Guantes 500 PP · Motocicleta 1.000 PP · Partícula 200 PP · Tintes 75 PP"]
+ ],
+ "plan": [
+  {"t": "Con 0 $ de inversión", "d": "Abre Personalización y prueba lo que tengas. Mira las tiendas por donde pases. Consigue el cosmético de los Gatabazas antes del 13 de noviembre."},
+  {"t": "Con 10-50 mil $", "d": "Ropa de tienda y lo más barato del GTL. Mira el precio antes: no te gastes en cosméticos lo que necesitas para la Liga."},
+  {"t": "Tras la Liga", "d": "Cuando entren los reencuentros, reserva una parte. Los cosméticos de temporada suben de precio cuando dejan de salir."},
+  {"t": "Más adelante", "d": "Partículas para tu Pokémon favorito, tintes y un conjunto completo."}
+ ],
+ "mal": [
+  "No compres cosméticos ni PP por fuera del juego.",
+  "No pagues mucho por algo sin comparar: filtra el GTL y mira varios.",
+  "El Donador corre aunque no juegues.",
+  "Un cosmético no mejora tu combate: nunca lo pongas por delante de curas o del equipo."
+ ],
+ "dudas": [
+  "No he podido leer las tiendas de cosméticos por ciudad ni la tienda de Puntos de Batalla.",
+  "Tampoco cuántos personajes admite una cuenta ni qué es exactamente de cuenta o de personaje.",
+  "Los precios en PP son de la wiki (julio de 2026) y pueden cambiar."
+ ]
+}
