@@ -7,6 +7,8 @@ export const ESPECIES={
  Serperior:{id:497,t:['planta']},Simipour:{id:516,t:['agua']},Graveler:{id:75,t:['roca','tierra'],evo:'Golem',cond:'por intercambio'},Golem:{id:76,t:['roca','tierra']},
  Dratini:{id:147,t:['dragon'],evo:'Dragonair',cond:'Nv.30'},Dragonair:{id:148,t:['dragon'],evo:'Dragonite',cond:'Nv.55'},Dragonite:{id:149,t:['dragon','volador']},
  Bagon:{id:371,t:['dragon'],evo:'Shelgon',cond:'Nv.30'},Shelgon:{id:372,t:['dragon'],evo:'Salamence',cond:'Nv.50'},Salamence:{id:373,t:['dragon','volador']},
+ Golbat:{id:42,t:['veneno','volador'],evo:'Crobat',cond:'por amistad'},Crobat:{id:169,t:['veneno','volador']},Hariyama:{id:297,t:['lucha']},
+ Machoke:{id:67,t:['lucha'],evo:'Machamp',cond:'por intercambio'},Machamp:{id:68,t:['lucha']},
  Golett:{id:622,t:['tierra','fantasma'],evo:'Golurk',cond:'Nv.43'},Golurk:{id:623,t:['tierra','fantasma']}};
 export const CAPS={Teselia:[20,24,27,31,35,38,43,46,56],Kanto:[20,26,32,37,46,47,50,55,62],Johto:[20,24,29,32,37,39,41,46,48],Hoenn:[20,24,28,33,35,38,44,48,58],Sinnoh:[20,27,29,34,37,43,46,52,60]};
 export const xf=m=>m===.5?'×½':m===.25?'×¼':'×'+m;

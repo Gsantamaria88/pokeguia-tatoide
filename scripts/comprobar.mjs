@@ -42,11 +42,12 @@ for (const [nombre, w, h, vistas] of [
   if (nombre === 'consola') {
     await p.goto(url + '#ahora');
     await p.waitForSelector('.vista');
-    await p.click('#p-cura');
+    const paso = await p.getAttribute('.vista input[data-paso]:not([disabled])', 'data-paso');
+    await p.click('#p-' + paso);
     await p.waitForTimeout(350);
     await p.reload();
     await p.waitForSelector('.vista');
-    if (!(await p.evaluate(() => JSON.parse(localStorage.getItem('cgear-tato')).hechos.cura))) mal('no guarda');
+    if (!(await p.evaluate((k) => JSON.parse(localStorage.getItem('cgear-tato')).hechos[k], paso))) mal('no guarda');
     const rutaSup = await p.evaluate(async () => (await (await fetch('datos/ruta.json')).json()).fases.length);
     console.log('Fases de la ruta:', rutaSup);
     await p.goto(url + '#ruta');
@@ -140,6 +141,7 @@ for (const [nombre, w, h, vistas] of [
     await p.waitForSelector('.vista');
     await p.click('[data-ev="gat:1"]');
     if (!(await p.innerText('.ev-c')).includes('1/30')) mal('contador evento');
+    await p.click('[data-med="5"]'); // deja 5 medallas para ver la celebración de la 6.ª
     await p.click('[data-med="6"]');
     await p.waitForTimeout(450);
     await p.screenshot({ path: `${salida}/consola-medalla.png` });
@@ -148,12 +150,12 @@ for (const [nombre, w, h, vistas] of [
     await p.waitForTimeout(250);
     if (await p.locator('.capa').count()) mal('la capa no se cierra');
     await p.click('[data-med="6"]');
-    await p.click('[data-evo="3"]');
+    await p.click('[data-evo="5"]');
     await p.waitForTimeout(900);
     await p.screenshot({ path: `${salida}/consola-evo.png` });
     await p.waitForTimeout(3100);
     if (await p.locator('.capa').count()) mal('evolución sin cerrar');
-    if (!(await p.innerText('.equipo')).includes('Dragonair')) mal('evolución');
+    if (!(await p.innerText('.equipo')).includes('Golurk')) mal('evolución');
     // Mando simulado: RB pasa a la siguiente sección
     await p.evaluate(() => {
       const bt = (i) => Array.from({ length: 17 }, (_, n) => ({ pressed: n === i }));

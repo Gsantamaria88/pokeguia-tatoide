@@ -131,7 +131,7 @@
     "salvajes":"Sin salvajes. Lou y Eileen dan combates diarios en la Casa de Batalla, Nv.39."}]},
   {"id":"f9","med":9,"nom":"Liga de Teselia","lim":"Límite 56 → 100","lugares":[
    {"es":"Ruta 10 y Calle Victoria","en":"Route 10 · Victory Road","pasos":[
-     ["nivel","Sube el equipo parejo a Nv.50-54","La guía de la comunidad pide finales de los 40 a principios de los 50. Shelgon evoluciona a Nv.50 y Dragonair a Nv.55.","p"],
+     ["nivel","Sube el equipo parejo a Nv.50-54","La guía de la comunidad pide finales de los 40 a principios de los 50. Golett evoluciona a Golurk a Nv.43. Simipour ya está en Nv.54: no lo subas más, sube a los otros.","p"],["gtl56","Refuerza el equipo en el GTL","Busca Nv.50-56 en el Servidor de Comercio. Prioridad: un Siniestro o Fantasma (Krookodile, Houndoom, Mismagius) para Anís y Catleya; Hielo (Weavile, Mamoswine) para los dragones de N y Ghetsis; Eléctrico (Galvantula, Jolteon) para Jellicent y Drifblim. Antes de comprar, mira sus movimientos.","t",1],
      ["vict","Cruza la Calle Victoria","Con Surf y Fuerza. Entrenadores Nv.43-46. Lleva 20-30 Hiperpociones, 10-15 Curas Totales, 8-12 Revivir, 3-6 Éter o Elixir y 2-3 Cuerdas Huida.","p"]],
     "objetos":["1F: Revivir, Caramelo Raro (con Surf), Ultra Ball, Pepita","2F (ocultos): Ultra Ball, MT Mofa, Revivir Máx., Max Poción","3F: Hiperpoción (oculta), MT Garra Dragón","4F: Hiperpoción, Revivir (oculto), Calcio, Cura Total (oculta), Carburante (oculto)","5F: MT Voltio Cruel","6F: Cura Total"],
     "salvajes":"Boldore, Druddigon, Durant, Mienfoo, Onix, Woobat Nv.43-45. Horda de Deino Nv.41-42. Rocas: Gigalith. Polvo: Excadrill."},

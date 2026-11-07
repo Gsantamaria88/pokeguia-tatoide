@@ -1,18 +1,18 @@
 {
- "medallas": 5,
- "dinero": 70681,
+ "medallas": 8,
+ "dinero": 191975,
  "hechos": {},
  "timers": {},
- "ficha": {"dex": 17, "bp": 0, "h": 14},
+ "ficha": {"dex": 24, "bp": 0, "h": 22},
  "tengo": {"MT Avivar": true, "MT Represalia": true, "MT Detección": true, "MT Bucle Arena": true, "MT Terratemblor": true, "MT Estoicismo": true, "MT Escaldar": true, "MT Hierba Lazo": true, "MT Voltiocambio": true, "MO Corte": true, "MO Destello": true, "MO Vuelo": true, "Bici": true},
- "evento": {"gat": 0, "fla": 20, "inc": 0},
- "actualizado": "2026-11-03T13:30:00Z",
+ "evento": {"gat": 0, "fla": 18, "inc": 0},
+ "actualizado": "2026-11-07T13:20:00Z",
  "equipo": [
-  {"sp":"Serperior","nv":36,"nat":"dócil","mov":[["Corte","normal",50],["Ciclón Hojas","planta",65],["Portazo","normal",80],["Hoja Aguda","planta",90]]},
-  {"sp":"Simipour","nv":38,"nat":"seria","mov":[["Escaldar","agua",80],["Hidrobomba","agua",120],["Triturar","siniestro",80],["Golpe Cabeza","normal",70]]},
-  {"sp":"Graveler","nv":35,"nat":"alegre (+Vel −At.Esp)","mov":[["Autodestruc","normal",0],["Avalancha","roca",75],["Terremoto","tierra",100],["Pedrada","roca",75]]},
-  {"sp":"Dratini","nv":35,"nat":"miedosa (+Vel −Ataque)","mov":[["Agilidad","psiquico",0],["Portazo","normal",80],["Carga Dragón","dragon",100],["Acua Cola","agua",90]]},
-  {"sp":"Bagon","nv":35,"nat":"activa (+Vel −Def)","mov":[["Cara Susto","normal",0],["Triturar","siniestro",80],["Garra Dragón","dragon",80],["Cabezazo Zen","psiquico",80]]},
-  {"sp":"Golett","nv":35,"nat":"seria","mov":[["Terratemblor","tierra",60],["Def. Férrea","acero",0],["Magnitud","tierra",70],["Megapuño","normal",80]]}
+  {"sp":"Simipour","nv":54,"nat":"seria","obj":"Garra Rápida","mov":[["Surf","agua",95],["Hidrobomba","agua",120],["Triturar","siniestro",80],["Onda Certera","lucha",120]]},
+  {"sp":"Serperior","nv":46,"nat":"dócil","obj":"Casco Dentado","mov":[["Corte","normal",50],["Ciclón Hojas","planta",65],["Gigadrenado","planta",75],["Hoja Aguda","planta",90]]},
+  {"sp":"Golbat","nv":48,"nat":"rara","mov":[["Vuelo","volador",90],["Acróbata","volador",55],["Cargatóxica","veneno",65],["Tajo Aéreo","volador",75]]},
+  {"sp":"Hariyama","nv":44,"nat":"agitada (+Def −At.Esp)","mov":[["Mov. Sísmico","lucha",0],["Espabila","lucha",60],["Puño Certero","lucha",150],["Fuerza","normal",80]]},
+  {"sp":"Machoke","nv":43,"nat":"audaz (+Ataque −Vel)","obj":"Brazal Firme","mov":[["Fuerza","normal",80],["Golpe Bis","dragon",40],["Detección","lucha",0],["A Bocajarro","lucha",120]]},
+  {"sp":"Golett","nv":36,"nat":"seria","mov":[["Terratemblor","tierra",60],["Bola Sombra","fantasma",80],["Magnitud","tierra",70],["Megapuño","normal",80]]}
  ]
 }
