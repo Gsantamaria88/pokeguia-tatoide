@@ -17,6 +17,7 @@ docs/                   la web (GitHub Pages sirve esta carpeta)
   js/calculos.js        tipos, límites y cálculo de combate; sin DOM
   js/app.js             vistas y eventos
   js/efectos.js         movimiento: contar, barras, medalla, evolución
+  js/juego.js           logros (salen solos de partida.json) y entrenamiento "¿a quién sacas?"
   datos/partida.json    ← estado real: medallas, dinero, equipo, pasos
   datos/ruta.json       ← paso a paso por fases y lugares
   datos/rivales.json    ← equipos para la matriz
@@ -52,6 +53,10 @@ git add -A && git commit -m "…" && git push
 Pages tarda un par de minutos. Comprobar luego la URL real. Commit solo con email noreply (ya configurado en este repo).
 
 **Mods tras un parche:** ver `privado/MODS.md`.
+
+## Diseño (v2, 11 nov 2026)
+
+Portada con el equipo en fila sobre el escenario, medallas hexagonales, "Próximo combate" con VS, tarjetas teñidas por su tipo, Logros al final de Ahora y modo Entrenar en Combate. Avisos y estados con fondo tintado, nunca con raya lateral. Sin emojis: iconos SVG de `IC`. Texto que habla de la partida (medallas, equipo, mods) se calcula o se revisa al actualizar: no dejar frases fijas que caducan.
 
 ## Movimiento
 

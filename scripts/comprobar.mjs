@@ -74,6 +74,18 @@ for (const [nombre, w, h, vistas] of [
     await p.click('[data-rival="gerania"]');
     await p.click('[data-modo="tabla"]');
     if (!(await p.locator('.matriz').count())) mal('tabla');
+    // Entrenamiento: responder y pasar a la siguiente
+    await p.click('[data-rival="anis"]');
+    await p.click('[data-modo="entrena"]');
+    if ((await p.locator('.opcion').count()) !== 6) mal('entrenar: sin pregunta');
+    await p.click('.opcion');
+    await p.waitForTimeout(400);
+    if (!(await p.locator('[data-sigue]').count())) mal('entrenar: sin respuesta');
+    if ((await p.evaluate(() => JSON.parse(localStorage.getItem('cgear-tato')).entreno.total)) !== 1) mal('entrenar: no cuenta');
+    await p.screenshot({ path: `${salida}/consola-entrena.png`, fullPage: true });
+    await p.click('[data-sigue]');
+    if (await p.locator('[data-sigue]').count()) mal('entrenar: no pasa de pregunta');
+    await p.click('[data-modo="versus"]');
     // Objetos y personaje
     await p.goto(url + '#objetos');
     await p.waitForSelector('.vista');

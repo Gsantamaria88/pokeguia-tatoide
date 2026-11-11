@@ -345,3 +345,124 @@ dialog[open]{animation:dlg 200ms var(--ease-out)}
 .cos small{color:var(--apagado);display:block;font-size:12px}
 #main[data-entra] .obj{animation:vista 200ms var(--ease-out) backwards}
 @media (max-width:760px){.barra{grid-template-columns:repeat(7,minmax(0,1fr))}.barra .nav{font-size:10px}.ficha.pj .ficha-b{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ================= v2 (11 nov 2026): portada con el equipo, logros y entrenamiento =================
+   Mismo mundo (el C-Gear oscuro, cian y oro, hexágonos). Cambia la profundidad: menos cajas con borde
+   duro, más capas; y el color de tipo pasa a significar algo en cada tarjeta. */
+:root{--linea:#234452;--sombra:inset 0 1px 0 rgb(255 255 255 / .05),0 10px 24px -14px rgb(0 0 0 / .7);--hex:polygon(25% 4%,75% 4%,100% 50%,75% 96%,25% 96%,0 50%)}
+::selection{background:var(--oro);color:#16232a}
+html{scrollbar-color:var(--borde) var(--abismo)}
+input,textarea{caret-color:var(--oro)}
+a{text-underline-offset:3px}
+.btn:hover{filter:brightness(1.08)}
+.paso,.vs,.meta,.obj,.plan,.bloque,.timer,.fase,.dicc div,.orden li{border-color:var(--linea);box-shadow:var(--sombra)}
+.lugar,.cos li,.hallazgos button,.res>div{border-color:var(--linea)}
+
+/* Avisos y estados sin la raya lateral: el color va en el fondo */
+.aviso{border-left:0;padding:7px 10px;background:color-mix(in oklab,var(--oro) 13%,transparent)}
+.aviso.mal{background:color-mix(in oklab,var(--rojo) 17%,transparent)}
+.obj-rec{border-left:0}
+.rank li{border-left:0}
+.rank li.bien{background:color-mix(in oklab,var(--verde) 13%,var(--abismo))}
+.rank li.mal{background:color-mix(in oklab,var(--oro) 10%,var(--abismo))}
+.rank li.peligro{background:color-mix(in oklab,var(--rojo) 17%,var(--abismo))}
+
+/* Portada */
+.portada{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);border:2px solid var(--borde);box-shadow:var(--sombra);background-color:var(--panel);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='48'%3E%3Cpath d='M14 1h28l14 23-14 23H14L0 24z' fill='none' stroke='%232f5261' stroke-opacity='.45'/%3E%3C/svg%3E")}
+.portada-a{padding:22px;display:grid;gap:14px;align-content:start;min-width:0}
+.portada-a h1{font:700 clamp(40px,6vw,64px)/1 var(--f-pixel)}
+.escena{position:relative;overflow:hidden;min-height:208px;display:grid;align-items:end;border-left:2px solid var(--borde);background:linear-gradient(180deg,#143646 0,#1d4a58 56%,#2f6248 56%,#27523e 72%,#1f4434 100%)}
+.fila-eq{list-style:none;margin:0;padding:0 8px 10px;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));position:relative}
+.pm{width:100%;background:none;border:0;padding:4px 2px 6px;display:grid;justify-items:center;gap:1px;color:var(--tinta);position:relative}
+.pm::before{content:"";position:absolute;left:18%;right:18%;top:62px;height:12px;border-radius:50%;background:rgb(6 20 16 / .45)}
+.pm .spr{width:78px;height:78px;position:relative;transition:transform 180ms var(--ease-out)}
+.pm b{font:700 13px/1.2 var(--f-rotulo);overflow-wrap:anywhere;text-align:center}
+.pm span{font:600 12px var(--f-rotulo);color:#cfe3dc;font-variant-numeric:tabular-nums}
+@media (hover:hover) and (pointer:fine){.pm:hover .spr{transform:translateY(-7px)}}
+.pm:focus-visible .spr{transform:translateY(-7px)}
+#main[data-entra] .fila-eq li{animation:llega 420ms var(--ease-out) backwards;animation-delay:calc(var(--i)*60ms)}
+@keyframes llega{from{transform:translateX(46px);opacity:0}}
+.tira{grid-column:1/-1;margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--borde);background:var(--panel)}
+.tira>div{padding:12px 16px;display:grid;gap:1px;align-content:start;min-width:0;border-right:1px solid var(--linea)}
+.tira>div:last-child{border-right:0}
+.tira dt{font:600 12px var(--f-rotulo);letter-spacing:.06em;text-transform:uppercase;color:var(--apagado)}
+.tira dd{margin:0;font:700 24px/1.15 var(--f-rotulo);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.tira small{color:var(--apagado);font-size:13px;line-height:1.3}
+.tira input{width:100%;min-width:0;background:transparent;border:0;border-bottom:1px dashed var(--borde);padding:0;font:inherit}
+.tira .limite dd{color:var(--oro)}
+
+/* Medallas hexagonales, como las celdas del C-Gear */
+.medalla,.medalla.on{background:none;border:0;position:relative;isolation:isolate}
+.medalla::before,.medalla::after{content:"";position:absolute;z-index:-1;clip-path:var(--hex)}
+.medalla::before{inset:0;background:var(--borde)}
+.medalla::after{inset:2px;background:var(--abismo)}
+.medalla.on::before{background:var(--tinta)}
+.medalla.on::after{background:var(--c)}
+@media (hover:hover) and (pointer:fine){button.medalla:hover{transform:translateY(-2px)}}
+
+/* Tarjeta de Pokémon: su tipo tiñe la cabecera y la barra dice cuánto le falta para el límite */
+.mon{border-color:var(--linea);box-shadow:var(--sombra);background:linear-gradient(180deg,color-mix(in oklab,var(--tc,var(--borde)) 22%,var(--panel)) 0,var(--panel) 92px)}
+.mon-top{grid-template-columns:72px minmax(0,1fr)}
+.mon .mon-top .spr{width:72px;height:72px}
+.nvbar{margin-top:6px;height:5px;max-width:150px}
+.nvbar.tope i{background:var(--oro)}
+.spr.grande{width:96px;height:96px}
+
+/* Próximo combate */
+.duelo{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:end;gap:8px;padding:14px 12px 12px;border:1px solid var(--linea);box-shadow:var(--sombra);background:linear-gradient(105deg,color-mix(in oklab,var(--cian) 17%,var(--panel)) 0 49.7%,color-mix(in oklab,var(--rojo) 19%,var(--panel)) 50.3% 100%)}
+.duelo>div{display:grid;justify-items:center;text-align:center;gap:1px;min-width:0}
+.duelo>div:first-child .spr{transform:scaleX(-1)}
+.duelo b{font:700 16px var(--f-rotulo)}
+.duelo small{font-size:13px;color:#d5e1df}
+.vs-x{align-self:center;font:700 30px/1 var(--f-pixel);color:var(--oro)}
+
+/* Logros */
+.logros{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px}
+.logro{display:grid;grid-template-columns:44px minmax(0,1fr);gap:10px;align-items:center;padding:10px;background:var(--panel);border:1px solid var(--linea)}
+.logro>div{display:grid;gap:2px;min-width:0}
+.logro b{font:700 15px/1.25 var(--f-rotulo)}
+.logro span:not(.bv),.logro small{font-size:13px;line-height:1.3;color:var(--apagado)}
+.logro .bv{margin-top:3px}
+.hex{width:44px;height:44px;display:grid;place-items:center;background:var(--panel2);color:var(--apagado);clip-path:var(--hex)}
+.hex svg{width:22px;height:22px}
+.logro.ok{box-shadow:var(--sombra)}
+.logro.ok .hex{background:var(--oro);color:#16232a}
+.logro.ok span:not(.bv){color:#d5e1df}
+.tostada{position:fixed;left:50%;translate:-50% 0;bottom:max(24px,env(safe-area-inset-bottom,0px));z-index:60;display:grid;gap:1px;padding:10px 16px;max-width:calc(100vw - 32px);background:var(--oro);color:#16232a;box-shadow:0 14px 30px -10px #000}
+.tostada b{font:700 15px var(--f-rotulo)}
+.tostada span{font-size:14px}
+
+/* Entrenamiento */
+.entrena{display:grid;gap:14px}
+.marcador{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:2px solid var(--borde);background:var(--panel)}
+.marcador>div{padding:10px 14px;display:grid;gap:1px;border-right:1px solid var(--linea)}
+.marcador>div:last-child{border-right:0}
+.marcador span{font:600 12px var(--f-rotulo);letter-spacing:.06em;text-transform:uppercase;color:var(--apagado)}
+.marcador b{font:700 24px/1.15 var(--f-rotulo);font-variant-numeric:tabular-nums}
+.reto{display:grid;gap:12px}
+.reto-rival{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;align-items:center;padding:14px;border:1px solid var(--linea);box-shadow:var(--sombra);background:color-mix(in oklab,var(--rojo) 13%,var(--panel))}
+.reto-rival>div{display:grid;gap:4px}
+#main .reto-rival .spr{animation:llega 260ms var(--ease-out)}
+.opciones{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.opcion{display:grid;justify-items:center;align-content:start;gap:2px;padding:10px 6px;min-height:140px;min-width:0;background:var(--panel);border:2px solid var(--linea);text-align:center}
+.opcion b{font:700 14px/1.2 var(--f-rotulo);overflow-wrap:anywhere}
+.opcion span{font-size:12px;line-height:1.3;color:#d5e1df}
+.opcion:disabled{cursor:default;color:var(--tinta)}
+.opcion:active:disabled{transform:none}
+@media (hover:hover) and (pointer:fine){.opcion:hover:not(:disabled){border-color:var(--cian);transform:translateY(-3px)}}
+.opcion.si{border-color:var(--verde);background:color-mix(in oklab,var(--verde) 17%,var(--panel))}
+.opcion.si .spr{animation:salto 340ms var(--ease-out)}
+.opcion.no{border-color:var(--rojo);background:color-mix(in oklab,var(--rojo) 17%,var(--panel));animation:niega 260ms ease-in-out}
+.opcion.resto{opacity:.62}
+@keyframes salto{40%{transform:translateY(-12px)}}
+@keyframes niega{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+
+@media (max-width:1040px){.portada{grid-template-columns:minmax(0,1fr)}.escena{border-left:0;border-top:2px solid var(--borde)}}
+@media (max-width:760px){
+  .tira{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tira>div:nth-child(2){border-right:0}.tira>div:nth-child(-n+2){border-bottom:1px solid var(--linea)}
+  .fila-eq{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:6px}
+  .opciones{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .tostada{bottom:calc(72px + env(safe-area-inset-bottom,0px))}
+  .duelo .grande{width:80px;height:80px}
+}
